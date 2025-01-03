@@ -1,0 +1,35 @@
+/* About.css */
+.about-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f8f9fa; /* Light grey background for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center;
+  }
+  
+  .about-container h1 {
+    font-size: 2.5rem;
+    color: #333; /* Dark color for contrast */
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Improve readability */
+    color: #555; /* Slightly lighter grey for paragraph text */
+  }
+  
+  .about-container p strong {
+    color: #2c3e50; /* Slightly darker for emphasis */
+  }
+  
+  .about-container p {
+    margin-bottom: 20px;
+  }
+  
+  .about-container p:last-child {
+    margin-bottom: 0; /* Remove margin from the last paragraph */
+  }
+  
