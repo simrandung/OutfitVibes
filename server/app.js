@@ -1,17 +1,23 @@
-const express = require('express');
-const cors = require("cors");
-const { generateMeta } = require('./controllers/openaiController');
-const { generateImage, getImage } = require("./controllers/leapApiController");
 
+import express from "express";
+import cors from "cors";
+// Import routes
+import chatRoute from "./routes/chatRoute.js";
+import imageRoute from "./routes/imageRoute.js";
+
+// Initialize Express app
 const app = express();
+const PORT = 8000;
+
+// Middleware
 app.use(cors());
-
-app.listen(8000, () => {
-    console.log('Server listening on port 8000');
-});
-
 app.use(express.json());
 
-app.post('/openai/meta', generateMeta);
-app.post("/generate-image", generateImage);
-app.get("/get-image/37d42ae9-5f5f-4399-b60b-014d35e762a5/:inferenceId", getImage);
+// Use routes
+app.use("/api/chat", chatRoute);
+app.use("/api/image", imageRoute);
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
