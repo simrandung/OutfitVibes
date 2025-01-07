@@ -3,7 +3,7 @@ import Together from "together-ai";
 
 // Instantiate Together client with your API key manually
 const together = new Together({
-  apiKey: "b35ae43cb305c2a4c22c5eaad8a780e71a69078967b3e8b69c64aca30a021aff", // Replace with your actual API key
+  apiKey: "c01f7fd0256ddbd195f783315e085fc4f7b464bf462dc58dd0c2e8f5c1bd5382", // Replace with your actual API key
 });
 
 // Create an Express Router
