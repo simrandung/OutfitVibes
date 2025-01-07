@@ -1,6 +1,6 @@
 import Together from "together-ai";
 
-const together = new Together({ apiKey: "b35ae43cb305c2a4c22c5eaad8a780e71a69078967b3e8b69c64aca30a021aff" });  // Directly use the key here
+const together = new Together({ apiKey: "c01f7fd0256ddbd195f783315e085fc4f7b464bf462dc58dd0c2e8f5c1bd5382" });  // Directly use the key here
 
 export const chatCompletion = async (req, res) => {
   try {
