@@ -14,8 +14,8 @@ app.use(cors());
 app.use(express.json());
 
 // Use routes
-app.use("/api/chat", chatRoute);
-app.use("/api/image", imageRoute);
+app.use("/chat", chatRoute);
+app.use("/image", imageRoute);
 
 // Start the server
 app.listen(PORT, () => {
